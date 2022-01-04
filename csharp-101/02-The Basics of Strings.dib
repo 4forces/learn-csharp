@@ -37,6 +37,9 @@ As you explore more with strings, you'll find that strings are more than a colle
 Console.WriteLine($"The name {firstFriend} has {firstFriend.Length} letters.");
 Console.WriteLine($"The name {secondFriend} has {secondFriend.Length} letters.");
 
+// -my code
+Console.WriteLine($"The first string has {firstFriend.Length} letters and second string has {secondFriend.Length} letters.")
+
 #!markdown
 
 # String Methods
@@ -51,8 +54,12 @@ Suppose your strings have leading or trailing spaces (also called **white space*
 
 #!csharp
 
+// -my practice code
+string test = "   test    ";
+Console.WriteLine($"This is a '{test.TrimEnd()}' line");
+
 string greeting = "      Hello World!       ";
-Console.WriteLine($"[{greeting}]");
+Console.WriteLine($"[{greeting.Trim()}]");
 
 string trimmedGreeting = greeting.TrimStart();
 Console.WriteLine($"[{trimmedGreeting}]");
@@ -78,6 +85,13 @@ Console.WriteLine(sayHello);
 sayHello = sayHello.Replace("Hello", "Greetings");
 Console.WriteLine(sayHello);
 
+// - my practice
+string toReplace1;
+string toReplace = "Quick brown dog jumps under fox";
+toReplace1 = toReplace.Replace("Quick","Super quick");
+toReplace1 = toReplace.Replace("brown","golden");
+Console.WriteLine(toReplace1);
+
 #!markdown
 
 ## Changing Case
@@ -89,6 +103,9 @@ Sometimes you need your strings to be all UPPERCASE or all lowercase. `ToUpper` 
 
 Console.WriteLine("WhiSPer".ToUpper());
 Console.WriteLine("sHoUt".ToLower());
+
+// - my practice
+Console.WriteLine("wHisPer".ToArray().GetType());
 
 #!markdown
 
@@ -110,6 +127,28 @@ Now it's your turn to play around with what you've learned. Try these exercises:
 Console.WriteLine("Playground");
 Console.WriteLine("supercalifragilisticexpialidocious");
 Console.WriteLine("       friendship bracelet     ");
+
+
+// - my practice
+Action<string> cw = Console.WriteLine;
+string pax1 = "Reeve";
+string pax2 = "Wiley";
+string pax3 = "Johnson";
+
+string pax4 = "supercalifragilisticexpialidocious";
+string pax5 = "       friendship bracelet     ";
+string pax5Trimmed = pax5.Trim();
+int charDiff = pax5.Length - pax5Trimmed.Length;
+
+cw(pax1.Length.ToString());
+cw(pax2.ToUpper().ToString());
+cw(pax3.ToLower().ToString());
+
+cw(pax4.Length.ToString());
+
+cw(pax5.Length.ToString());
+cw(pax5Trimmed.Length.ToString());
+cw($"{charDiff} 'spaces' have been removed");
 
 #!markdown
 

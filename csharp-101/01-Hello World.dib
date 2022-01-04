@@ -23,7 +23,14 @@ Write your first C# program! It outputs a string "Hello World" to the console.
 
 #!csharp
 
-Console.WriteLine("Hello World!");
+Console.WriteLine("Hello Friends!");
+
+#!csharp
+
+// my code (- mc moving fwd)
+string aFriend = "Scott";
+// Console.WriteLine("Hello " + aFriend);
+Console.WriteLine("Hello " + aFriend);
 
 #!markdown
 
@@ -53,6 +60,7 @@ You may have noticed that the word "Hello" was missing from the last code block.
 #!csharp
 
 Console.WriteLine("Hello " + aFriend + "!");
+Console.WriteLine("Hello " + "bye bye " + aFriend)
 
 #!markdown
 
@@ -64,6 +72,9 @@ You just used `+` to build a new string from a **variable** and a **constant**. 
 
 aFriend = "string interpolation";
 Console.WriteLine($"Hello {aFriend}!");
+
+var anItem = "canfood";
+Console.WriteLine($"doggy loves {anItem}")
 
 #!markdown
 
@@ -97,6 +108,7 @@ There are plenty more resources out there to learn!
 > [Watch the video](https://www.youtube.com/watch?v=KT2VR7m19So&list=PLdo4fOcmZ0oVxKLQCHpiUWun7vlJJvUiN&index=2)
 >
 > [Documentation: Intro to C#](https://docs.microsoft.com/dotnet/csharp/tour-of-csharp/tutorials/hello-world?WT.mc_id=csharpnotebook-35129-website)
+>>> byebye
 
 #!markdown
 
