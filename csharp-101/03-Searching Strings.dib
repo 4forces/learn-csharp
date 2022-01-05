@@ -24,6 +24,16 @@ string songLyrics = "You say goodbye, and I say hello";
 Console.WriteLine(songLyrics.Contains("goodbye"));
 Console.WriteLine(songLyrics.Contains("greetings"));
 
+#!csharp
+
+Action<string> cw = Console.WriteLine;
+string songLyrics = "You say goodbye, and I say hello";
+
+var result = songLyrics.Contains("goodbye");
+cw(result.ToString());
+
+Console.WriteLine(songLyrics.Contains("greetings"));
+
 #!markdown
 
 ## StartsWith and EndsWith
@@ -35,7 +45,9 @@ Console.WriteLine(songLyrics.Contains("greetings"));
 
 #!csharp
 
+Action<string> cw = Console.WriteLine;
 string songLyrics = "You say goodbye, and I say hello";
+cw(songLyrics.StartsWith("hi").ToString());
 
 #!markdown
 
@@ -47,6 +59,51 @@ Play around with what you've learned! Here's some starting ideas:
 > Which lines end with "no"?
 > Think back to the previous module. Can you make some lines all uppercase and some lines all lowercase?
 > If you change case, how does that affect `Contains`?
+
+#!csharp
+
+Action<string> cw = Console.WriteLine;
+
+Console.WriteLine("Playground");
+String line1 = "You say yes, I say no";
+String line2 = "You say stop and I say go, go, go";
+String line3 = "Oh, no";
+String line4 = "You say goodbye and I say hello";
+String line5 = "Hello, hello";
+String line6 = "I don't know why you say goodbye, I say hello";
+
+// cw(line1.Contains("hello").ToString());
+// cw(line2.Contains("hello").ToString());
+// cw(line3.Contains("hello").ToString());
+// cw(line4.Contains("hello").ToString());
+// cw(line5.Contains("hello").ToString());
+// cw(line6.Contains("hello").ToString());
+
+// cw(line1.StartsWith("You").ToString());
+// cw(line2.StartsWith("You").ToString());
+// cw(line3.StartsWith("You").ToString());
+// cw(line4.StartsWith("You").ToString());
+// cw(line5.StartsWith("You").ToString());
+// cw(line6.StartsWith("You").ToString());
+
+// cw(line1.EndsWith("no").ToString());
+// cw(line2.EndsWith("no").ToString());
+// cw(line3.EndsWith("no").ToString());
+// cw(line4.EndsWith("no").ToString());
+// cw(line5.EndsWith("no").ToString());
+// cw(line6.EndsWith("no").ToString());
+
+// cw(line1.ToUpper().ToString());
+// cw(line2.ToUpper().ToString());
+// cw(line3.ToUpper().ToString());
+// cw(line4.ToLower().ToString());
+// cw(line5.ToLower().ToString());
+// cw(line6.ToLower().ToString());
+
+string line1Up = line1.ToUpper();
+cw(line1Up);
+cw(line1.EndsWith("no").ToString());
+cw(line1.Contains("no").ToString());
 
 #!csharp
 

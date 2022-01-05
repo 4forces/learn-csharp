@@ -83,8 +83,14 @@ You can make math as long and complicated as you want.
 
 #!csharp
 
+Action <int> cw = Console.WriteLine;
 int d = (a + b) - 6 * c + (12 * 4) / 3 + 12;
+int z = a + b;
+int y = 12 * 4;
 Console.WriteLine(d);
+Console.WriteLine(d);
+cw(z);
+cw(y)
 
 #!markdown
 

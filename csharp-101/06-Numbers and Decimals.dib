@@ -36,6 +36,25 @@ Console.WriteLine(c / d);
 
 You can see that a decimals have a higher precision than doubles.
 
+#!csharp
+
+decimal min = decimal.MinValue;
+decimal max = decimal.MaxValue;
+
+int min1 = int.MinValue;
+int max1 = int.MaxValue;
+
+long min2 = long.MinValue;
+long max2 = long.MaxValue;
+
+short min3 = short.MinValue;
+short max3 = short.MaxValue;
+
+Console.WriteLine($"Dec: {min} and {max}");
+Console.WriteLine($"Int: {min1} and {max1}");
+Console.WriteLine($"Long: {min2} and {max2}");
+Console.WriteLine($"Short: {min3} and {max3}")
+
 #!markdown
 
 # Playground
@@ -50,7 +69,21 @@ Play around with what you've learned! Here's some starting ideas:
 
 #!csharp
 
+Action <object> cw = Console.WriteLine;
 Console.WriteLine("Playground");
+
+// int radius = 2.5;
+// short radius1 = 2.5;
+decimal radius2 = 2.5M;
+double radius3 = 2.5;
+double area3 = Math.PI * radius3 * radius3;
+
+cw($"double area: {area3}");
+// cw($"radius1 area: {radius1}")s;
+cw($"radius2 area: {radius2}");
+cw($"radius3 area: {radius3}");
+
+cw(area3)
 
 #!markdown
 

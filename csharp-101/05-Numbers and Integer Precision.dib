@@ -58,6 +58,7 @@ double b = 4;
 double c = 3;
 double d = (a + b) / c;
 Console.WriteLine(d);
+Console.WriteLine(double.MinValue+ " " +double.MaxValue)
 
 #!markdown
 
@@ -111,6 +112,8 @@ Play around with what you've learned! Here's some starting ideas:
 #!csharp
 
 Console.WriteLine("Playground");
+Console.WriteLine(int.MinValue + " " + int.MaxValue);
+Console.WriteLine(double.MinValue + " " + double.MaxValue)
 
 #!markdown
 
