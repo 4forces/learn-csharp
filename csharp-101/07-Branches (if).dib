@@ -19,6 +19,21 @@ int b = 6;
 if (a + b > 10)
     Console.WriteLine("The answer is greater than 10.");
 
+#!csharp
+
+int a = 5;
+int b = 3;
+
+bool something = a  + b > 10;
+if (something)
+{
+    Console.WriteLine("The answer is greater than 10.");
+}
+else
+{ 
+    Console.WriteLine("The answer is not greater than 10.");
+}
+
 #!markdown
 
 In words, this if statement is saying "if a plus b is greater than 10, write the line 'The answer is greater than 10'".
@@ -65,8 +80,14 @@ What if you want more complex code in your `if` statements? That's great, just a
 
 #!csharp
 
-int c = 4;
-if ((a + b + c > 10) && (a == b))
+int a = 4;
+int b = 4;
+int c = 2;
+if (
+    (a + b + c > 10) 
+    || 
+    (a == b)
+   )
 {
     Console.WriteLine("The answer is greater than 10");
     Console.WriteLine("And the first number is equal to the second");
